@@ -1,5 +1,7 @@
-<form action="/submit">
-  <label for="email">Enter your email:</label>
-  <input type="email" id="email" required />
-  <input type="submit" value="subscribe"></input>
-</form>;
+function signUp(event) {
+  event.preventDefault();
+  let input = document.querySelector("#email");
+  console.log(input.value);
+}
+let form = document.querySelector("form");
+form.addEventListener("submit", signUp);
